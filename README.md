@@ -9,7 +9,7 @@ A responsive, accessible static site built with plain HTML, CSS, and a small amo
 - `index.html`: biography, research interests, publications, projects, experience, education, and teaching.
 - `assets/style.css`: typography, colors, and responsive layout.
 - `assets/site.js`: project filters, citation copying, and navigation highlighting.
-- `assets/Amin_Aghakasiri_CV.pdf`: public two-page CV, based on the current application CV on 17 October 2026, with the phone number and Spain residency line removed as requested by Amin. The original application CV is unchanged.
+- `assets/Amin_Aghakasiri_CV.pdf`: public two-page CV, prepared for this website on 17 October 2026. The original application CV is unchanged.
 - `assets/portrait.jpg`: profile photograph from Amin’s GitHub account.
 - `sitemap.xml`: update the last-modified date when updating content.
 
