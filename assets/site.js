@@ -1,5 +1,24 @@
 "use strict";
 
+const themeToggle = document.querySelector(".theme-toggle");
+if (themeToggle) {
+  const updateThemeControl = () => {
+    const isDark = document.documentElement.dataset.theme !== "light";
+    themeToggle.setAttribute("aria-checked", String(isDark));
+    themeToggle.title = `Switch to ${isDark ? "light" : "dark"} mode`;
+    themeToggle.querySelector("[data-theme-label]").textContent = isDark ? "Dark" : "Light";
+    document.querySelector('meta[name="theme-color"]').content = isDark ? "#111814" : "#f8f9f6";
+  };
+  updateThemeControl();
+  themeToggle.hidden = false;
+  themeToggle.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    document.documentElement.dataset.theme = nextTheme;
+    try { localStorage.setItem("amin-theme", nextTheme); } catch { /* Switching still works without storage. */ }
+    updateThemeControl();
+  });
+}
+
 // Keep the complete portfolio readable when JavaScript is unavailable.
 const filters = document.querySelector(".project-filters");
 const projects = Array.from(document.querySelectorAll(".project"));

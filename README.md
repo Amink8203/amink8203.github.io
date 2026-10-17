@@ -2,18 +2,17 @@
 
 Personal research website for **https://amink8203.github.io/**.
 
-A responsive, accessible static site built with plain HTML, CSS, and a small amount of JavaScript. No dependencies, accounts, analytics, or build step are required. The content remains readable without JavaScript; JavaScript adds project filtering and citation copying.
+A responsive, accessible static site built with plain HTML, CSS, and a small amount of JavaScript. No dependencies, accounts, analytics, or build step are required. Dark mode is the default, with a light/dark switch that remembers the visitor’s choice locally. The content remains readable without JavaScript; JavaScript adds theme switching, project filtering, and citation copying.
 
 ## Files to update
 
 - `index.html`: biography, research interests, publications, projects, experience, education, and teaching.
 - `assets/style.css`: typography, colors, and responsive layout.
-- `assets/site.js`: project filters, citation copying, and navigation highlighting.
-- `assets/Amin_Aghakasiri_CV.pdf`: public two-page CV, prepared for this website on 17 October 2026. The original application CV is unchanged.
+- `assets/site.js`: theme switching, project filters, citation copying, and navigation highlighting.
 - `assets/portrait.jpg`: profile photograph from Amin’s GitHub account.
 - `sitemap.xml`: update the last-modified date when updating content.
 
-Publication author order and review statuses follow the current `CV/CV.tex` as of 17 October 2026. Review statuses should be updated when decisions arrive. No equal-contribution designations are asserted. The manuscript link for AbductionBench is the Google Drive URL supplied by Amin.
+Publication author order and review statuses follow the current application materials as of 17 October 2026. Review statuses should be updated when decisions arrive. No equal-contribution designations are asserted. The manuscript link for AbductionBench and the Google Scholar profile link were supplied by Amin. No CV download is published on this website.
 
 ## Preview locally
 
