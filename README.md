@@ -31,3 +31,7 @@ The repository is `Amink8203/amink8203.github.io`. The publishing branch should 
 In the repository’s **Settings → Pages**, select **Deploy from a branch**, the publishing branch, and **/(root)**, then save. GitHub Pages must be available for the repository’s existing visibility and the account’s plan. Keep the repository’s visibility unchanged unless the owner chooses otherwise.
 
 The original Academic Pages template remains recoverable through Git history. The new site uses its own HTML and styles.
+
+## Icon credits
+
+The Scholar and Github logos are from [Simple Icons](https://github.com/simple-icons/simple-icons), licensed under CC0. The LinkedIn logo is from [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome), by Fonticons, Inc., licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The email symbol is a simple envelope drawn for this site.

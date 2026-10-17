@@ -66,26 +66,26 @@ nav a[aria-current="location"] { color: var(--accent); text-decoration: underlin
 .theme-icon { width: 15px; height: 15px; flex-shrink: 0; }
 .theme-icon-sun, :root[data-theme="light"] .theme-icon-moon { display: none; }
 :root[data-theme="light"] .theme-icon-sun { display: block; }
-.hero { padding-block: 78px 65px; display: grid; grid-template-columns: minmax(0, 1fr) 234px; column-gap: 76px; align-items: start; }
+.hero { padding-block: 64px 58px; display: grid; grid-template-columns: minmax(0, 1fr) 234px; column-gap: 76px; align-items: start; }
 .eyebrow, .section-number, .project-area, .entry-meta { font-size: 11px; letter-spacing: 1.35px; text-transform: uppercase; font-weight: 600; }
 .eyebrow { color: var(--accent); }
 h1 { font-family: var(--serif); font-weight: 400; letter-spacing: -2px; font-size: clamp(38px, 4.3vw, 59px); line-height: 1.15; margin: 15px 0 21px; }
 .name-period { color: var(--accent); }
-.hero-lead { font-family: var(--serif); font-size: 23px; line-height: 1.5; letter-spacing: -.2px; margin-bottom: 23px; }
+.hero h1 { margin: 0 0 22px; }
 .bio { color: var(--muted); max-width: 690px; }
 .bio p + p { margin-top: 12px; }
 .bio a { color: var(--ink); text-decoration-color: var(--link-line); }
 .bio strong { color: var(--ink); }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 .button { min-height: 43px; padding: 9px 17px; text-decoration: none; font-size: 13px; display: inline-flex; align-items: center; gap: 24px; border: 1px solid var(--ink); border-radius: 3px; }
 .button-primary { background: var(--button-surface); border-color: var(--button-surface); color: var(--button-text); }
 .button-primary:hover { background: var(--button-hover); border-color: var(--button-hover); color: var(--button-hover-text); }
 .button-secondary { border-color: var(--control-border); }
 .button-secondary:hover { border-color: var(--accent); }
-.social-links { display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 12px; margin-top: 23px; color: var(--muted); }
-.social-links a { text-decoration: none; }
+.social-links { display: flex; flex-wrap: wrap; gap: 12px 23px; font-size: 13px; margin-top: 25px; color: var(--muted); }
+.social-links a { display: inline-flex; align-items: center; gap: 7px; min-height: 28px; text-decoration: none; }
 .social-links a:hover { text-decoration: underline; }
-.portrait-block { padding-top: 28px; }
+.social-icon { width: 17px; height: 17px; flex-shrink: 0; }
+.portrait-block { padding-top: 9px; }
 .portrait-frame { padding: 8px; border: 1px solid var(--portrait-border); border-radius: 4px; background: var(--portrait-background); transform: rotate(2deg); }
 .portrait-frame img { aspect-ratio: 1 / 1.12; object-fit: cover; object-position: 50% 42%; width: 100%; height: auto; border-radius: 2px; }
 .portrait-block figcaption { font-size: 11px; line-height: 1.8; margin-top: 21px; padding-left: 2px; }
@@ -164,9 +164,8 @@ h3 { font-weight: 600; line-height: 1.45; font-size: 17px; letter-spacing: -.15p
   .container, .header-inner { width: calc(100% - 64px); }
   .hero { grid-template-columns: minmax(0, 1fr) 188px; gap: 35px; padding-block: 57px; }
   h1 { font-size: 44px; }
-  .hero-lead { font-size: 21px; }
   .bio { font-size: 14px; }
-  .portrait-block { padding-top: 35px; }
+  .portrait-block { padding-top: 9px; }
   .content-section { grid-template-columns: 145px minmax(0, 1fr); gap: 28px; }
   .interests-list { grid-template-columns: 1fr; gap: 7px; }
   .timeline-heading { flex-wrap: wrap; gap: 5px 20px; }
@@ -180,15 +179,13 @@ h3 { font-weight: 600; line-height: 1.45; font-size: 17px; letter-spacing: -.15p
   .monogram { font-size: 25px; }
   nav { gap: 21px; font-size: 11px; width: 100%; justify-content: space-between; }
   .theme-toggle { padding: 5px 8px; font-size: 11px; min-height: 30px; }
-  .hero { grid-template-columns: minmax(0, 1fr); position: relative; padding-block: 40px 38px; }
+  .hero { grid-template-columns: minmax(0, 1fr) 83px; column-gap: 18px; row-gap: 22px; padding-block: 40px 38px; }
   .hero-copy { display: contents; }
-  .hero .eyebrow { font-size: 9px; padding-right: 105px; min-height: 30px; }
-  h1 { font-size: clamp(32px, 6.7vw, 43px); letter-spacing: -1.2px; padding-right: 100px; margin-top: -23px; margin-bottom: 10px; line-height: 1.2; }
-  .hero-lead { font-size: 21px; margin-block: -15px 0; }
-  .bio { font-size: 14px; margin-top: -18px; }
-  .hero-actions { margin-top: -12px; }
-  .social-links { gap: 9px 17px; margin-top: -15px; font-size: 11px; }
-  .portrait-block { position: absolute; top: 39px; right: 0; width: 83px; padding: 0; }
+  h1 { font-size: clamp(32px, 6.7vw, 43px); letter-spacing: -1.2px; line-height: 1.2; }
+  .hero h1 { grid-column: 1; grid-row: 1; align-self: center; margin: 0; }
+  .bio { grid-column: 1 / -1; font-size: 14px; margin: 0; }
+  .social-links { grid-column: 1 / -1; gap: 10px 20px; margin: 0; font-size: 12px; }
+  .portrait-block { grid-column: 2; grid-row: 1; width: 83px; padding: 0; }
   .portrait-frame { padding: 4px; }
   .portrait-frame img { aspect-ratio: 1; }
   .portrait-block figcaption { display: none; }
@@ -219,7 +216,6 @@ h3 { font-weight: 600; line-height: 1.45; font-size: 17px; letter-spacing: -.15p
 }
 @media (max-width: 450px) {
   .projects-grid, .teaching-grid { grid-template-columns: 1fr; }
-  .hero-lead { font-size: 20px; }
   .project { padding-block: 21px; }
   .project h3 { font-size: 17px; }
   .project-area { font-size: 9px; }
@@ -231,8 +227,8 @@ h3 { font-weight: 600; line-height: 1.45; font-size: 17px; letter-spacing: -.15p
   nav { gap: 8px; font-size: 10px; }
   .theme-toggle { padding: 5px; }
   .theme-toggle [data-theme-label] { display: none; }
-  .hero .eyebrow { font-size: 8px; letter-spacing: .8px; padding-right: 64px; }
-  h1 { font-size: 24px; padding-right: 64px; }
+  .hero { grid-template-columns: minmax(0, 1fr) 56px; column-gap: 14px; }
+  h1 { font-size: 24px; }
   .portrait-block { width: 56px; }
   .contact-section { padding: 24px 16px; }
   .contact-email { font-size: 11px; white-space: normal; overflow-wrap: anywhere; }
@@ -241,7 +237,7 @@ h3 { font-weight: 600; line-height: 1.45; font-size: 17px; letter-spacing: -.15p
 @media print {
   :root, :root[data-theme] { color-scheme: light; --paper: #fff; --ink: #000; --muted: #333; --accent: #000; --line: #ccc; --soft: #fff; }
   body { font-size: 11px; }
-  .site-header, .project-filters, .hero-actions, .citation, .contact-section, .site-footer, .skip-link { display: none; }
+  .site-header, .project-filters, .citation, .contact-section, .site-footer, .skip-link { display: none; }
   .container { width: 100%; }
   .hero { padding-block: 0 25px; }
   .content-section { padding-block: 20px; }
